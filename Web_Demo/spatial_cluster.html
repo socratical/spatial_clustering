@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spatial Clustering</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    .dropbtn {
+      background-color: #b0536a;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+    }
+
+    .dropdown {
+      position: center;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: center;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {background-color: #ddd;}
+
+    .show {display: block;}
+    </style>
+
+</head>
+<body>
+	<h1>GeoSpatial Clustering with GeoPandas and Other Python Packages</h1>
+		<h2>GeoPandas and Pandas</h2>
+			<ul>
+				<li>GeoPandas is a geospatial data operations package.</li>
+				<li>Like pandas except data frames include classes of geometric objects</li>
+					<ul>
+						<li>Points</li>
+						<li>Lines</li>
+						<li>Polygons</li>
+					</ul>
+				<li>Key in Spacial Processing</li>
+			</ul>
+		<h2>MatPlotLib</h2>
+            <ul>
+                <li>Ploting Library for Python</li>
+            </ul>
+		<h2>SKLearn</h2>
+            <ul>
+                <li>Machine Learning Library</li>
+            </ul>
+		<h2>PySAL</h2>
+    		<ul>
+			<li>Spatial Analysis Library</li>
+			<li>mapclassify - quantiles</li>
+			<li>LibPySAL is also used for spacial weights</li>
+			</ul>
+	<h1>Examples</h1>
+		<h2>Austin Pet Data</h2>
+			<img src="PetPlot.png" width="800" height="800"/>
+		<h2>London Air BnB Quantiles Chart</h2>
+		<p>QUANTILES will create attractive maps that place an equal
+			number of observations in each class: If you have 30 counties
+			and 6 data classes, you’ll have 5 counties in each class.
+			The problem with quantiles is that you can end up with
+			classes that have very different numerical ranges
+			<a href="https://nbviewer.jupyter.org/github/geopandas/geopandas/blob/
+			master/examples/choropleths.ipynb#Classification-by-quantiles">(ref)</a> </p>
+			<img src = "Quantiles.png" width="800" height="800"//>
+		<h2>Bivariate Correlation Chart</h2>
+			<img src = 'BivariateCorrelation.png'width="800" height="800"/>
+		<h2>KMeans Classification for Center London</h2>
+			<img src = 'KMeans.png' width="800" height="800"/>
+		<h2>Number of Elements in KMeans Subgroups</h2>
+			<img src = 'KMeansElements.png' width="800" height="800"/>
+		<h2>AirBnB Spacial KNN SubPolygons For London</h2>
+			<img src = 'KNN.png' width="800" height="800"/>
+		<h2>Austin Quantiles</h2>
+			<img src = 'AustinQuantiles.png' width="800" height="800"/>
+		<h2>Austin Bivariate</h2>
+			<img src = 'AustinBivariate.png' width="800" height="800"/>
+		<h2>Austin KMeans</h2>
+			<img src = 'AustinKMeans.png' width="800" height="800"/>
+		<h2>Portland Quantiles</h2>
+			<img src = 'PortlandQuantiles.png' width="800" height="800"/>
+		<h2>Portland Bivariate</h2>
+    		<img src = 'PortlandBivariate.png' width="800" height="800"/>
+		<h2>Portland KMeans</h2>
+			<img src = 'PortlandKMeans.png' width="800" height="800"/>
+		<h2>Seattle Quantiles</h2>
+			<img src = 'SeatleQuantiles.png' width="800" height="800"/>
+		<h2>Seattle Bivariate</h2>
+    		<img src = 'SeatleBivariate.png' width="800" height="800"/>
+		<h2>Seattle KMeans</h2>
+			<img src = 'SeatleKMeans.png' width="800" height="800"/>
+	<h1>Reflection of Results</h1>
+		<ul>
+			<li>Understand your problem and dataset clearly.</li>
+			<li>Focus on what limitations your concept has.</li>
+			<li>Spatial Clustering is growing, libaries constantly changing.</li>
+			<li>Keep focused on task at hand.</li>
+		</ul>
+
+	<!--
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Cities</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Portland</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+	<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    -->
+</body>
+</html>

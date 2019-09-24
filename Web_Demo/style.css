@@ -1,0 +1,16 @@
+@media only screen {
+body {
+  background: #222;
+  color: #fff;
+  font: 1.2em "Liberation Sans", sans-serif;
+  text-align: center;
+}
+  ul {display:inline; margin:0; padding:0;}
+.text-column {
+  margin: 0 auto;
+  max-width: 40em;
+}
+a {
+  color: #0f7;
+}
+}
